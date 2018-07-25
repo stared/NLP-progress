@@ -14,5 +14,5 @@ Works as well (frankly, I am surprised!)
 Will see if the thing below works as well:
 
 {% for page in site.pages %}
- <p><{{ page.title }}/p>
+ <p>{{ page.title }}</p>
 {% endfor %}
