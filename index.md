@@ -8,7 +8,7 @@ type: navigation
 
 {% for page in site.pages %}
   {% if page.type != "navigation" %}
-* [{{ page.title }}]({{ page.url }})
+* [{{ page.title }}]({{ site.url }}{{ page.url }})
   {% endif %}
 {% endfor %}
 
@@ -29,4 +29,4 @@ or [`nlpsota.com`](http://nlpsota.com/) in your browser.
 
 ### Contributing
 
-Visit GitHub repository [sebastianruder/NLP-progress](https://github.com/sebastianruder/NLP-progress). 
+Visit GitHub repository [sebastianruder/NLP-progress](https://github.com/sebastianruder/NLP-progress).
