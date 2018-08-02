@@ -1,1 +1,6 @@
 theme: jekyll-theme-slate
+defaults:
+  - scope:
+      path: "pages/*.md"
+    values:
+      permalink: /:basename:output_ext

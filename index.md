@@ -6,11 +6,8 @@ type: navigation
 
 ### Table of contents
 
-{% for page in site.pages %}
-  {% if page.type != "navigation" %}
-* [{{ page.title }}]({{ site.url }}{{ page.url }})
-  {% endif %}
-{% endfor %}
+{% for page in site.pages %} {% if page.type != "navigation" and page.title %}
+* [{{ page.title }}]({{ site.url }}{{ page.url }}) {% endif %} {% endfor %}
 
 ### Description
 
